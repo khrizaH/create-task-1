@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="stylemain.css" rel="stylesheet" type="text/css" />
+  <link href="styleartist.css" rel="stylesheet" type="text/css" />
+  <link href="styleplayer.css" rel="stylesheet" type="text/css" />
+  <link href="styleplaylist.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="artistplayerlist">
+    <div class="wrapper-main">
+      <div class="artistcollection">
+        <div class="wrapper-songs">
+          <div class="artist-details">
+            <ul>
+              <li class="dots"><button onclick="dondeVan()" class="yatrabtn" ><img src="album/A Donde Van.jpg" class="album-cover yatra" ></button>
+              <img src="album/Créeme.jpg" class="album-cover maluma" onclick="creeme()"></li>
+              <li class="dots"><img src="album/Entre tu y yo.jpg" class="album-cover chema" onclick="tuYyo()"> <img src="album/Déjala Que Vuelva.jpg" class="album-cover piso21" onclick="queVuelva()"></li>
+              <li class="dots"><img src="album/Adan y Eva.jpg" class="album-cover pauloL" onclick="adanYeva()"> <img src="album/La Bachata.jpg" class="album-cover manuel" onclick="laBachata()"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="musicplayer">
+        <div class="wrapper-player">
+          <div class="player-details">
+            <div class="now-playing">Playing x of y</div>
+            <div class="music-art"></div>
+            <div class="music-name">Track Name</div>
+            <div class="music-artist">Track Artist</div>
+          </div>
+
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+
+          <div class="slider_container">
+            <img src="images1/volumedown.png" class="volume-down">
+            <input type="range" min="1" max="100" value="40" class="volume_slider" onchange="setVolume()">
+            <img src="images1/volumeup.png" class="volume-up">
+          </div>
+
+          <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()">
+              <button class="step-backward"></button>
+            </div>
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <button class="play-circle"></button>
+            </div>
+            <div class="next-track" onclick="nextTrack()">
+              <button class="step-forward"></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="musicplaylist">
+        <div class="wrapper-playlist">
+          <div class="playlist-details">
+            <ul>
+              <p class="playlisttitle">Playlist</p>
+              <li class="songlist"></li>
+              <li class="songlist"></li>
+              <li class="songlist"></li>
+              <li class="songlist"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

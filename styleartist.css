@@ -1,0 +1,32 @@
+.album-cover {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+}
+
+.artistcollecttion {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 50vh;
+}
+
+.wrapper-songs {
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #ddd;
+}
+
+.artist-details {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.dots {
+  list-style-type: none;
+
+}
